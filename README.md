@@ -1,7 +1,7 @@
 Pygments content element
 ========================
 
-[Pygments](http://pygments.org/) - the Python syntax highlighter - is a nice syntax highlighter with a log of lexers,
+[Pygments](http://pygments.org/) - the Python syntax highlighter - is a nice syntax highlighter with a lot of lexers,
 formatters and styles. This extension provide a content element and frontend module that output highlighted code made
 with pygments.
 
