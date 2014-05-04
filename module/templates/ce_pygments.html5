@@ -1,0 +1,44 @@
+
+<div class="<?php echo $this->class; ?> block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
+
+	<?php if ($this->headline): ?>
+	<<?php echo $this->hl; ?>><?php echo $this->headline; ?></<?php echo $this->hl; ?>>
+	<?php endif; ?>
+
+	<?php
+	if (
+		$this->pygmentsFormatter == 'bmp' ||
+		$this->pygmentsFormatter == 'bitmap' ||
+		$this->pygmentsFormatter == 'gif' ||
+		$this->pygmentsFormatter == 'img' ||
+		$this->pygmentsFormatter == 'IMG' ||
+		$this->pygmentsFormatter == 'png' ||
+		$this->pygmentsFormatter == 'jpg' ||
+		$this->pygmentsFormatter == 'jpeg' ||
+		$this->pygmentsFormatter == 'svg'
+	):
+		if ($this->pygmentsFormatter == 'bmp' || $this->pygmentsFormatter == 'bitmap'):
+			$mime = 'image/bmp';
+		elseif ($this->pygmentsFormatter == 'gif'):
+			$mime = 'image/gif';
+		elseif ($this->pygmentsFormatter == 'img' || $this->pygmentsFormatter == 'IMG' || $this->pygmentsFormatter == 'png'):
+			$mime = 'image/png';
+		elseif ($this->pygmentsFormatter == 'jpg' ||$this->pygmentsFormatter == 'jpeg'):
+			$mime = 'image/jpeg';
+		elseif ($this->pygmentsFormatter == 'svg'):
+			$mime = 'image/svg';
+		else:
+			$mime = 'image/' . $this->pygmentsFormatter;
+		endif;
+
+		?><img src="data:<?= $mime ?>;base64,<?= base64_encode($this->pygmentizedCode) ?>"><?php
+
+	elseif ($this->pygmentsFormatter == 'html'):
+		echo $this->pygmentizedCode;
+
+	else:
+		?><pre><?= $this->pygmentizedCode ?></pre><?php
+	endif;
+	?>
+
+</div>

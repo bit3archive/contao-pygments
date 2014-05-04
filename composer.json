@@ -1,0 +1,49 @@
+{
+	"name":"bit3/contao-pygments",
+	"description":"Code elements, using the pygments syntax highlighter for Contao OpenSource CMS",
+	"keywords":["contao", "code", "pygments", "syntax", "hightlight"],
+	"type":"contao-module",
+	"homepage":"http://bit3.de",
+	"license":"LGPL-3.0+",
+	"authors":[
+		{
+			"name":"Tristan Lins",
+			"email":"tristan.lins@bit3.de",
+			"homepage":"http://bit3.de",
+			"role":"Developer"
+		}
+	],
+	"support":{
+		"email":"info@bit3.de",
+		"issues":"https://github.com/bit3/contao-pygments/issues",
+		"wiki":"https://github.com/bit3/contao-pygments/wiki",
+		"irc":"irc://irc.freenode.org/contao.dev",
+		"source":"https://github.com/bit3/contao-pygments"
+	},
+	"require":{
+		"php":">=5.3",
+		"contao/core":">=3.1,<4-dev",
+		"contao-community-alliance/composer-installer": "*",
+		"contao-community-alliance/dependency-container": "~1.0",
+		"symfony/process": "~2.3"
+	},
+	"require-dev":{
+		"squizlabs/php_codesniffer":"1.*",
+		"bit3/php-coding-standard":"@dev"
+	},
+	"autoload":{
+		"psr-4": {
+			"Bit3\\Contao\\Pygments\\": "src"
+		}
+	},
+	"extra":{
+		"contao": {
+			"sources":{
+				"module":"system/modules/pygments"
+			}
+		},
+		"branch-alias": {
+			"dev-develop": "1.0.x-dev"
+		}
+	}
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.1">
+  <file datatype="php" original="system/modules/pygments/languages/en/tl_content.php" source-language="en">
+    <body>
+      <trans-unit id="tl_content.pygmentsSyntax.0">
+        <source>Syntax</source>
+      </trans-unit>
+      <trans-unit id="tl_content.pygmentsSyntax.1">
+        <source>Please choose a scripting language.</source>
+      </trans-unit>
+      <trans-unit id="tl_content.pygmentsStyle.0">
+        <source>Style</source>
+      </trans-unit>
+      <trans-unit id="tl_content.pygmentsStyle.1">
+        <source>Please choose a style.</source>
+      </trans-unit>
+      <trans-unit id="tl_content.pygmentsFormatter.0">
+        <source>Formatter</source>
+      </trans-unit>
+      <trans-unit id="tl_content.pygmentsFormatter.1">
+        <source>Please choose a formatter.</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

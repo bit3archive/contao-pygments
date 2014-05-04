@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.1">
+  <file datatype="php" original="system/modules/pygments/languages/en/default.php" source-language="en">
+    <body>
+      <trans-unit id="CTE.pygments.0">
+        <source>Code (Pygments)</source>
+      </trans-unit>
+      <trans-unit id="CTE.pygments.1">
+        <source>Highlights code snippets with pygments and prints them to the screen.</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
