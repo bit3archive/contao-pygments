@@ -27,6 +27,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['pygmentsSyntax'] = array
 $GLOBALS['TL_DCA']['tl_content']['fields']['pygmentsFormatter'] = array
 (
 	'label'            => &$GLOBALS['TL_LANG']['tl_content']['pygmentsFormatter'],
+	'default'          => 'html',
 	'exclude'          => true,
 	'inputType'        => 'select',
 	'options_callback' => array('Bit3\Contao\Pygments\DataContainer\Callbacks', 'getFormatterOptions'),
